@@ -1,0 +1,11 @@
+{% extends 'core/index.html' %}
+
+{% block header %}
+Trámites
+{% endblock header %}
+
+
+{% block main %}
+<button><a href="{% url 'tramites:tipodetramite_list' %}">Tipos de Trámites</a></button>
+<button><a href="{% url 'tramites:tramite_list' %}">Trámites</a></button>
+{% endblock main %}

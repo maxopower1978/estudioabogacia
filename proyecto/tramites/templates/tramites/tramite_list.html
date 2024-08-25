@@ -1,0 +1,15 @@
+{% extends 'core/index.html' %}
+
+{% block header %}
+Lista de Trámites
+{% endblock header %}
+
+
+{% block main %}
+<div>
+    {% for tramite in tramites %}
+    <p>{{tramite}}</p>
+    {% endfor %}
+    <button><a href="{% url 'tramites:index' %}">Volver</a></button>
+</div>
+{% endblock main %}
